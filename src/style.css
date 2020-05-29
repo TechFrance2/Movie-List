@@ -1,0 +1,22 @@
+body {
+    margin: 0em;
+    background-color: coral;
+}
+
+.header {
+    background-color: darkorange;
+    height: 100px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: x-large;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.movielist {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-style: normal;
+}
