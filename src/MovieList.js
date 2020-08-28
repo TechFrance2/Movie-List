@@ -1,24 +1,24 @@
 import React from 'react'
 
-function MovieList() {
+
+
+function MovieList(props) {
+  const sawItStyle = {
+    fontStyle: 'italic',
+    color: '#cdcdcd',
+    textDecoration: "line-through"
+  }
     return(
         <div>
-        <p>
-          <input type='checkbox'/>  Mulan 
-        </p>
-        <p>
-           <input type='checkbox'/>  The Pilgrim's Progress
-        </p> 
-        <p>
-           <input type='checkbox'/> Wonder Woman 1984  
-        </p>
-        <p>
-           <input type='checkbox'/> The Invisible Man  
-        </p>
-        <p>
-           <input type='checkbox'/> No Time to Die  
+        <p style = {props.item.saw ? sawItStyle: null }>
+          <input 
+          type='checkbox' 
+          checked = {props.item.saw} 
+          onChange = {() => props.handleChange(props.item.id)} /> 
+          {props.item.text}
         </p>
 
+       
       </div>
 
 
@@ -27,3 +27,7 @@ function MovieList() {
 
 
 export default MovieList
+
+
+
+
